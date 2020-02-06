@@ -17,4 +17,4 @@ RUN wget https://download-cf.jetbrains.com/idea/${INTELLIJ_IDE_TAR} && \
     echo idea.config.path=/etc/idea/config >> idea/bin/idea.properties && \
     chmod -R 777 /etc/idea
 
-CMD idea/bin/inspect.sh ${IDEA_PROJECT_DIR} ${IDEA_PROJECT_DIR}/.idea/inspectionProfiles/Project_Default.xml ${IDEA_PROJECT_DIR}/target/idea_inspections -v2
+CMD idea/bin/inspect.sh ${IDEA_PROJECT_DIR} ${IDEA_PROJECT_DIR}/.idea/inspectionProfiles/Project_Default.xml ${IDEA_PROJECT_DIR}/target/idea_inspections
